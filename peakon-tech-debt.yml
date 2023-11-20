@@ -1,0 +1,12 @@
+grepCountMetrics:
+  includeExtensions:
+    - 'js'
+    - 'mjs'
+    - 'cjs'
+  patterns:
+    eslintTotal:
+      heading: 'ESLint total'
+      pattern: 'eslint-disable-'
+    eslintRules:
+      heading: 'ESLint rule "{}"'
+      pattern: 'eslint-disable-[\w-]+\s+\K[\w@/-]+'
